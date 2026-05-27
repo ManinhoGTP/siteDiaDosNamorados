@@ -1,4 +1,22 @@
 #tituloPrincipal{
     text-align: center;
     color: darkred;
+    border-style: solid;
+    border-radius: 6px;
+    border-color: pink;
+    background-color: antiquewhite;
+    border-width: 5px;
+}
+#introdução{
+    font-weight: bolder;
+    font-size: larger;
+    margin-left: 50px;
+    margin-top: 44px;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: antiquewhite;
+}
+body{
+    background-image: linear-gradient(rgb(255, 120, 120), rgb(253, 163, 163));
+    background-attachment: fixed;
 }
