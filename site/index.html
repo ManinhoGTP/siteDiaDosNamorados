@@ -26,14 +26,45 @@
     <hr>
 
     <div id="divBotoes">
-        <button onclick="mostrarSection('tela1')" class="botoes">Calendário / Datas</button>
-        <button onclick="mostrarSection('tela2')" class="botoes">Melhores momentos</button>
-        <button onclick="mostrarSection('tela3')" class="botoes">Músicas</button>
-        <button onclick="mostrarSection('tela4')" class="botoes">Coisas que eu gostaria de fazer com você</button>
+        <button onclick="mostrarSection('tela1')" class="botoes">Datas / Momentos</button>
+        <button onclick="mostrarSection('tela2')" class="botoes">Músicas</button>
+        <button onclick="mostrarSection('tela3')" class="botoes">??</button>
+        <button onclick="mostrarSection('tela4')" class="botoes">??</button>
+    </div>
+
+    <div id="divBotoes1">
+
+        <button onclick="proximaSubSection()" class="botoes" id="botoes1">próximo</button>
+        <button onclick="ultimaSubSection()" class="botoes" id="botoes1">anterior</button>
     </div>
 
         <section id="tela1" class="tela ativa">
-            #1
+
+            <!-- <div id="dataDiv"> -->
+
+                <section id="subSection" class="subtela">
+                    <div class="book">
+                        <p id="cardTexto">
+                            O Inicio
+                        </p>
+                        <div class="cover">
+                            <p id="cardTitulo"> 03/04/2026 <br>O Inicio de tudo</p>
+                        </div>
+                    </div>
+                </section>
+                
+                
+                <section id="subSection2" class="subtela">
+                    <div class="book">
+                        <p id="cardTexto">Hello</p>
+                        <div class="cover">
+                            <p id="cardTitulo">Teste</p>
+                        </div>
+                    <!-- </div> -->
+                </section>
+                
+                
+            </div>
         </section>
         
         <section id="tela2" class="tela">

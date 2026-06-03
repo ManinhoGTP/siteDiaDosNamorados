@@ -1,7 +1,7 @@
+document.getElementById("subSection").style.display = "flex"
 const relogio = document.getElementById("relogio")
 
 function mostrarSection(sectionId){
-
 
     const section = document.querySelectorAll(".tela")
     
@@ -11,6 +11,53 @@ function mostrarSection(sectionId){
     
     const sectionAtiva = document.getElementById(sectionId)
     sectionAtiva.classList.add("ativa")
+
+}
+
+let SubSectionNum = 1
+function proximaSubSection(){
+
+    SubSectionNum += 1
+    if (SubSectionNum > 2){
+        SubSectionNum = 1
+    }
+    let subSection = document.getElementById("subSection")
+    let subSection2 = document.getElementById("subSection2")
+
+
+    if (SubSectionNum == 1){
+        subSection.style.display = "flex"
+    }else{
+        subSection.style.display = "none"
+    }
+
+     if (SubSectionNum == 2){
+        subSection2.style.display = "flex"
+    }else{
+        subSection2.style.display = "none"
+    }
+}
+function ultimaSubSection(){
+
+    SubSectionNum -= 1
+    if (SubSectionNum < 1){
+        SubSectionNum = 2
+    }
+    let subSection = document.getElementById("subSection")
+    let subSection2 = document.getElementById("subSection2")
+
+
+    if (SubSectionNum == 1){
+        subSection.style.display = "flex"
+    }else{
+        subSection.style.display = "none"
+    }
+
+     if (SubSectionNum == 2){
+        subSection2.style.display = "flex"
+    }else{
+        subSection2.style.display = "none"
+    }
 }
 
 const tempo = setInterval(function() {
