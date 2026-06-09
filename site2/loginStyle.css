@@ -1,0 +1,52 @@
+#section-login{
+    display: flex;
+    /* text-align: center; */
+}
+.div-login{
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+    background-image: linear-gradient(rgb(255, 164, 232), rgb(255, 172, 172));
+    margin: auto;
+}
+#botao-login{
+    border: 0px;
+    background-color: rgb(99, 248, 86);
+    width: 100%;
+    height: 23px;
+    border-radius: 4px;
+    margin-top: 7px;
+}
+#texto-usuario, #texto-senha{
+    text-align: left;
+    font-weight: 1000;
+    font-size: larger;
+}
+input{
+    width: 220px;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px;
+    border-style: solid;
+    border-color: lightgray;
+}
+#saida{
+    color: red;
+}
+
+
+/* Outros */
+#botao-login:hover{
+    transition: 0.2s;
+    scale: 1.03;
+}
+h1{
+    text-align: center;
+}
+body{
+    background-image: linear-gradient(rgb(255, 167, 248), rgb(255, 213, 213));
+    background-attachment: fixed;
+}
