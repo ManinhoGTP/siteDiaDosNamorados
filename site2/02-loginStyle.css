@@ -40,6 +40,7 @@ input{
 
 /* Outros */
 #botao-login:hover{
+    cursor: pointer;
     transition: 0.2s;
     scale: 1.03;
 }

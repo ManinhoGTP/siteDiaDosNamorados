@@ -9,7 +9,7 @@ function fazerLogin(){
     }else if(senha.value != "03042010"){
         output.innerHTML = "senha inválida. Tente '03042010'"
     }else{
-        window.location = "index.html"
+        window.location = "01-index.html"
     }
     
 }
