@@ -1,3 +1,12 @@
+/* Requerido */
+.tela{
+    display: none;
+}
+.ativa{
+    display: flex;
+}
+
+
 /* Cabeça da página */
 #section-introducao{
     display: flex;
@@ -31,23 +40,32 @@ hr{
 .btn-meio{
     border-radius: 5px;
 }
-/* #section-meio1{
-} */
+#section-meio1{
+    justify-content: center;
+}
 .galeria {
-    background-color: white;
-    display: flex;
     width: fit-content;
     border-radius: 10px;
 }
-.galeria-item {
+.galeria-imagem {
     margin-top: 20px;
     margin-left: 20px;
     margin-bottom: 20px;
-    width: fit-content;
-    max-width: 400px;
-    max-height: 400px;
-    height: fit-content;
+    margin-right: 20px;
+    max-width: 300px;
+    max-height: 300px;
     border-radius: 10px;
+}
+#bloco{
+    background-color: rgb(237, 210, 255);
+    display: flex;
+    max-width: 750px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+#bloco-texto{
+    margin-right: 7.5px;
 }
 
 /* importante */
@@ -61,10 +79,4 @@ h1{
 body{
     background-image: linear-gradient(rgb(255, 167, 248),rgb(255, 213, 213));
     background-attachment: fixed;
-}
-.tela{
-    display: none;
-}
-.ativa{
-    display: block;
 }
