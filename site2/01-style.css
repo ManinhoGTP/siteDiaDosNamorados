@@ -31,6 +31,24 @@ hr{
 .btn-meio{
     border-radius: 5px;
 }
+/* #section-meio1{
+} */
+.galeria {
+    background-color: white;
+    display: flex;
+    width: fit-content;
+    border-radius: 10px;
+}
+.galeria-item {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: fit-content;
+    max-width: 400px;
+    max-height: 400px;
+    height: fit-content;
+    border-radius: 10px;
+}
 
 /* importante */
 h1{
@@ -44,10 +62,6 @@ body{
     background-image: linear-gradient(rgb(255, 167, 248),rgb(255, 213, 213));
     background-attachment: fixed;
 }
-/* main{
-    background-image: linear-gradient(rgb(174, 0, 255),rgb(253, 8, 8));
-    background-attachment: fixed;
-} */
 .tela{
     display: none;
 }
