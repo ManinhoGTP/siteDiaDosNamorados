@@ -34,45 +34,15 @@ hr{
     border-radius: 5px;
 }
 
-#btn-mudarSection{
-    display: block;
-    text-align: center;
-}
+
+
 #section-meio1{
     justify-content: center;
     border-radius: 1px;
 }
-.galeriaDeMomentos {
-    width: fit-content;
-    border-radius: 10px;
-}
-#div-conteudo{
-    display: flex;
-}
-.galeria-imagem {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-    margin-right: 20px;
-    max-width: 300px;
-    max-height: 300px;
-    border-radius: 10px;
-    align-self: center;
-}
 
-/* #bloco{
-    background-color: rgb(237, 210, 255);
-    display: block;
-    max-width: 750px;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-}
-#bloco-texto{
-    margin-right: 7.5px;
-} */
 
-/* importante */
+
 #tituloPrincipal{
     text-align: center;
     background-color: white;
@@ -91,5 +61,31 @@ body{
     display: none;
 }
 .ativa{
+    display: flex;
+}
+
+
+/* sla fds */
+/* #subSection1{
+    display: inline-flex;
+} */
+#subSectionConteudo{
+    /* display: inline-flex; */
+}
+.btn-mudarSection{
+    margin-top: 10px;
+    border-radius: 5px;
+}
+#teste{
+    text-align: center;
+}
+#subSectionTitulo{
+    text-align: center;
+}
+#subSectionImagem{
+    width: 250px;
+    height: 250px;
+}
+#subSectionMain{
     display: flex;
 }
