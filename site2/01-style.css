@@ -66,12 +66,7 @@ body{
 
 
 /* sla fds */
-/* #subSection1{
-    display: inline-flex;
-} */
-#subSectionConteudo{
-    /* display: inline-flex; */
-}
+
 .btn-mudarSection{
     margin-top: 10px;
     border-radius: 5px;
@@ -85,7 +80,16 @@ body{
 #subSectionImagem{
     width: 250px;
     height: 250px;
+    border-radius: 15px;
+    border-style: dashed;
+}
+#subSectionImagem:hover{
+    transition: 0.2s;
+    scale: 1.1;
+    cursor: pointer;
 }
 #subSectionMain{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
 }

@@ -71,3 +71,11 @@ function ultimaSubSection(){
         subSection2.style.display = "none"
     }
 }
+
+const imagens = document.querySelectorAll('.imagemClicavel')
+
+imagens.forEach((img) => {
+    img.addEventListener('click', () => {
+        alert(`${img.alt}`)
+    })
+})
