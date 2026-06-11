@@ -1,10 +1,4 @@
-/* Requerido */
-.tela{
-    display: none;
-}
-.ativa{
-    display: flex;
-}
+
 
 
 /* Cabeça da página */
@@ -24,14 +18,13 @@
     border-radius: 8px;
     margin-top: 20px;
 }
+
 /* Meio da página */
 hr{
     border-color: blueviolet;
     border-width: 5px;
     margin-top: 30px;
 }
-
-
 #div-meioBtns{
     display: flex;
     justify-content: center;
@@ -40,12 +33,21 @@ hr{
 .btn-meio{
     border-radius: 5px;
 }
+
+#btn-mudarSection{
+    display: block;
+    text-align: center;
+}
 #section-meio1{
     justify-content: center;
+    border-radius: 1px;
 }
-.galeria {
+.galeriaDeMomentos {
     width: fit-content;
     border-radius: 10px;
+}
+#div-conteudo{
+    display: flex;
 }
 .galeria-imagem {
     margin-top: 20px;
@@ -57,7 +59,8 @@ hr{
     border-radius: 10px;
     align-self: center;
 }
-#bloco{
+
+/* #bloco{
     background-color: rgb(237, 210, 255);
     display: block;
     max-width: 750px;
@@ -67,10 +70,10 @@ hr{
 }
 #bloco-texto{
     margin-right: 7.5px;
-}
+} */
 
 /* importante */
-h1{
+#tituloPrincipal{
     text-align: center;
     background-color: white;
     border-radius: 11px;
@@ -80,4 +83,13 @@ h1{
 body{
     background-image: linear-gradient(rgb(255, 167, 248),rgb(255, 213, 213));
     background-attachment: fixed;
+}
+.tela{
+    display: none;
+}
+.subTela{
+    display: none;
+}
+.ativa{
+    display: flex;
 }

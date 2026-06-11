@@ -21,14 +21,14 @@ function proximaSubSection(){
     if (SubSectionNum > 2){
         SubSectionNum = 1
     }
-    let subSection = document.getElementById("subSection")
+    let subSection1 = document.getElementById("subSection1")
     let subSection2 = document.getElementById("subSection2")
 
 
     if (SubSectionNum == 1){
-        subSection.style.display = "flex"
+        subSection1.style.display = "flex"
     }else{
-        subSection.style.display = "none"
+        subSection1.style.display = "none"
     }
 
      if (SubSectionNum == 2){
@@ -43,14 +43,14 @@ function ultimaSubSection(){
     if (SubSectionNum < 1){
         SubSectionNum = 2
     }
-    let subSection = document.getElementById("subSection")
+    let subSection1 = document.getElementById("subSection1")
     let subSection2 = document.getElementById("subSection2")
 
 
     if (SubSectionNum == 1){
-        subSection.style.display = "flex"
+        subSection1.style.display = "flex"
     }else{
-        subSection.style.display = "none"
+        subSection1.style.display = "none"
     }
 
      if (SubSectionNum == 2){

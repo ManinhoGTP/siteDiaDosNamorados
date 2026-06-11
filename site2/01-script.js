@@ -25,3 +25,49 @@ function mostrarSection(sectionId){
     sectionAtiva.classList.add("ativa")
 
 }
+
+let SubSectionNum = 1
+function proximaSubSection(){
+
+    SubSectionNum += 1
+    if (SubSectionNum > 2){
+        SubSectionNum = 1
+    }
+    let subSection1 = document.getElementById("subSection1")
+    let subSection2 = document.getElementById("subSection2")
+
+
+    if (SubSectionNum == 1){
+        subSection1.style.display = "flex"
+    }else{
+        subSection1.style.display = "none"
+    }
+
+     if (SubSectionNum == 2){
+        subSection2.style.display = "flex"
+    }else{
+        subSection2.style.display = "none"
+    }
+}
+function ultimaSubSection(){
+
+    SubSectionNum -= 1
+    if (SubSectionNum < 1){
+        SubSectionNum = 2
+    }
+    let subSection1 = document.getElementById("subSection1")
+    let subSection2 = document.getElementById("subSection2")
+
+
+    if (SubSectionNum == 1){
+        subSection1.style.display = "flex"
+    }else{
+        subSection1.style.display = "none"
+    }
+
+     if (SubSectionNum == 2){
+        subSection2.style.display = "flex"
+    }else{
+        subSection2.style.display = "none"
+    }
+}
