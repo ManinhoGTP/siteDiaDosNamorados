@@ -32,11 +32,12 @@ let SubSectionNum = 1
 function proximaSubSection(){
 
     SubSectionNum += 1
-    if (SubSectionNum > 2){
+    if (SubSectionNum > 3){
         SubSectionNum = 1
     }
     let subSection1 = document.getElementById("subSection1")
     let subSection2 = document.getElementById("subSection2")
+    let subSection3 = document.getElementById("subSection3")
 
 
     if (SubSectionNum == 1){
@@ -49,16 +50,23 @@ function proximaSubSection(){
         subSection2.style.display = "flex"
     }else{
         subSection2.style.display = "none"
+    }
+
+    if (SubSectionNum == 3){
+        subSection3.style.display = "flex"
+    }else{
+        subSection3.style.display = "none"
     }
 }
 function ultimaSubSection(){
 
     SubSectionNum -= 1
     if (SubSectionNum < 1){
-        SubSectionNum = 2
+        SubSectionNum = 3
     }
     let subSection1 = document.getElementById("subSection1")
     let subSection2 = document.getElementById("subSection2")
+    let subSection3 = document.getElementById("subSection3")
 
 
     if (SubSectionNum == 1){
@@ -71,6 +79,12 @@ function ultimaSubSection(){
         subSection2.style.display = "flex"
     }else{
         subSection2.style.display = "none"
+    }
+
+    if (SubSectionNum == 3){
+        subSection3.style.display = "flex"
+    }else{
+        subSection3.style.display = "none"
     }
 }
 
