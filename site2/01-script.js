@@ -16,7 +16,7 @@ function fazerLogin(){
 }
 
 //Função de mostrar / sumir section
-function mostrarSection(sectionId){
+function mostrarSection(sectionId, numero){
 
     const section = document.querySelectorAll(".tela")
     
@@ -26,18 +26,30 @@ function mostrarSection(sectionId){
     
     const sectionAtiva = document.getElementById(sectionId)
     sectionAtiva.classList.add("ativa")
-
 }
+
+
+//Função de mostrar / sumir subSection
 let SubSectionNum = 1
+let SubSectionMusicaNum = 1
 function proximaSubSection(){
 
     SubSectionNum += 1
+    SubSectionMusicaNum += 1
     if (SubSectionNum > 3){
         SubSectionNum = 1
+    }
+    if (SubSectionMusicaNum > 4){
+        SubSectionMusicaNum = 1
     }
     let subSection1 = document.getElementById("subSection1")
     let subSection2 = document.getElementById("subSection2")
     let subSection3 = document.getElementById("subSection3")
+    
+    let subSectionMusica1 = document.getElementById("subSectionMusica1")
+    let subSectionMusica2 = document.getElementById("subSectionMusica2")
+    let subSectionMusica3 = document.getElementById("subSectionMusica3")
+    let subSectionMusica4 = document.getElementById("subSectionMusica4")
 
 
     if (SubSectionNum == 1){
@@ -56,18 +68,52 @@ function proximaSubSection(){
         subSection3.style.display = "flex"
     }else{
         subSection3.style.display = "none"
+    }
+
+    if (SubSectionMusicaNum == 1){
+        subSectionMusica1.style.display = "flex"
+    }else{
+        subSectionMusica1.style.display = "none"
+    }
+
+     if (SubSectionMusicaNum == 2){
+        subSectionMusica2.style.display = "flex"
+    }else{
+        subSectionMusica2.style.display = "none"
+    }
+
+    if (SubSectionMusicaNum == 3){
+        subSectionMusica3.style.display = "flex"
+    }else{
+        subSectionMusica3.style.display = "none"
+    }
+
+    if (SubSectionMusicaNum == 4){
+        subSectionMusica4.style.display = "flex"
+    }else{
+        subSectionMusica4.style.display = "none"
     }
 }
 function ultimaSubSection(){
 
     SubSectionNum -= 1
+    SubSectionMusicaNum -= 1
     if (SubSectionNum < 1){
         SubSectionNum = 3
+    }
+
+   
+    if (SubSectionMusicaNum < 1){
+        SubSectionMusicaNum = 4
     }
     let subSection1 = document.getElementById("subSection1")
     let subSection2 = document.getElementById("subSection2")
     let subSection3 = document.getElementById("subSection3")
 
+    let subSectionMusica1 = document.getElementById("subSectionMusica1")
+    let subSectionMusica2 = document.getElementById("subSectionMusica2")
+    let subSectionMusica3 = document.getElementById("subSectionMusica3")
+    let subSectionMusica4 = document.getElementById("subSectionMusica4")
 
     if (SubSectionNum == 1){
         subSection1.style.display = "flex"
@@ -86,7 +132,37 @@ function ultimaSubSection(){
     }else{
         subSection3.style.display = "none"
     }
+
+    if (SubSectionMusicaNum == 1){
+        subSectionMusica1.style.display = "flex"
+    }else{
+        subSectionMusica1.style.display = "none"
+    }
+
+     if (SubSectionMusicaNum == 2){
+        subSectionMusica2.style.display = "flex"
+    }else{
+        subSectionMusica2.style.display = "none"
+    }
+
+    if (SubSectionMusicaNum == 3){
+        subSectionMusica3.style.display = "flex"
+    }else{
+        subSectionMusica3.style.display = "none"
+    }
+
+    if (SubSectionMusicaNum == 4){
+        subSectionMusica4.style.display = "flex"
+    }else{
+        subSectionMusica4.style.display = "none"
+    }
+
 }
+
+
+
+
+
 
 //Imagens clicaveis
 const imagens = document.querySelectorAll('.imagemClicavel')
